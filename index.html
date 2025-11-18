@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pocket Promises - Encuentra el versículo bíblico que necesitas según tu emoción del día">
-    <title>Pocket Promises - Tu mensaje de Dios para hoy</title>
+    <meta name="description" content="Pocket Promises / Notas de Bendición - Encuentra el versículo bíblico que necesitas según tu emoción del día">
+    <title>Pocket Promises / Notas de Bendición</title>
     <style>
         * {
             margin: 0;
@@ -33,13 +33,20 @@
 
         h1 {
             font-size: 3em;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
 
+        .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+
         .tagline {
-            font-size: 1.3em;
-            margin-bottom: 30px;
+            font-size: 1.2em;
+            margin-bottom: 15px;
             opacity: 0.95;
         }
 
@@ -73,6 +80,19 @@
             font-size: 1.1em;
         }
 
+        .bilingual-text {
+            margin-bottom: 10px;
+        }
+
+        .spanish {
+            color: #555;
+        }
+
+        .english {
+            color: #666;
+            font-style: italic;
+        }
+
         .features {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -98,6 +118,16 @@
             margin-bottom: 15px;
         }
 
+        .feature-card p {
+            margin-bottom: 10px;
+        }
+
+        .feature-card .english {
+            color: rgba(255,255,255,0.9);
+            font-style: italic;
+            font-size: 0.95em;
+        }
+
         .moments-list {
             background: #f8f9fa;
             padding: 30px;
@@ -114,7 +144,7 @@
             padding: 10px 0;
             padding-left: 30px;
             position: relative;
-            font-size: 1.1em;
+            font-size: 1.05em;
         }
 
         .moments-list li:before {
@@ -124,24 +154,6 @@
             color: #667eea;
             font-weight: bold;
             font-size: 1.3em;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-size: 1.2em;
-            font-weight: bold;
-            margin: 20px 0;
-            transition: transform 0.3s ease;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-
-        .cta-button:hover {
-            transform: scale(1.05);
         }
 
         .highlight-box {
@@ -162,13 +174,8 @@
         .benefit-item {
             text-align: center;
             padding: 20px;
-        }
-
-        .benefit-item::before {
-            content: "🙏";
-            display: block;
-            font-size: 3em;
-            margin-bottom: 10px;
+            background: #f8f9fa;
+            border-radius: 10px;
         }
 
         footer {
@@ -190,12 +197,16 @@
                 font-size: 2em;
             }
 
+            .subtitle {
+                font-size: 1.2em;
+            }
+
             .content {
                 padding: 30px 20px;
             }
 
             .tagline {
-                font-size: 1.1em;
+                font-size: 1em;
             }
         }
     </style>
@@ -203,131 +214,147 @@
 <body>
     <div class="container">
         <header>
-            <h1>🙏 Pocket Promises</h1>
+            <h1>Pocket Promises</h1>
+            <p class="subtitle">Notas de Bendición</p>
             <p class="tagline">Hay momentos en que el corazón necesita una palabra de Dios, y no siempre sabemos dónde encontrarla.</p>
+            <p class="tagline">There are moments when the heart needs a word from God, and we don't always know where to find it.</p>
         </header>
 
         <div class="content">
             <section class="section">
-                <p style="font-size: 1.2em; text-align: center; color: #555;">
-                    La mente se agita, la fuerza se agota y la esperanza se siente lejana. En esos momentos,
-                    una sola Escritura puede traer luz, paz y dirección.
+                <p style="font-size: 1.2em; text-align: center; margin-bottom: 10px;">
+                    <strong class="spanish">Pocket Promises fue creada para traerte un mensaje bíblico que habla directamente a lo que estás atravesando hoy.</strong>
                 </p>
-                <p style="font-size: 1.2em; text-align: center; color: #555; margin-top: 20px;">
-                    <strong>Pocket Promises fue creada para traerte un mensaje bíblico que habla directamente a lo que estás atravesando hoy.</strong>
+                <p style="font-size: 1.1em; text-align: center; color: #666; font-style: italic;">
+                    <strong>Pocket Promises was created to bring you a biblical message that speaks directly to what you're going through today.</strong>
                 </p>
             </section>
 
             <section class="section">
-                <h2>DIOS YA TIENE UNA PALABRA PARA TI</h2>
+                <h2>DIOS YA TIENE UNA PALABRA PARA TI<br><span style="font-size: 0.8em; font-style: italic; color: #764ba2;">GOD ALREADY HAS A WORD FOR YOU</span></h2>
 
                 <div class="features">
                     <div class="feature-card">
                         <h4>1️⃣ Indica cómo te sientes</h4>
                         <p>Selecciona tu emoción del momento</p>
+                        <p class="english">Indicate how you feel - Select your emotion</p>
                     </div>
                     <div class="feature-card">
                         <h4>2️⃣ Recibe un versículo</h4>
                         <p>Un mensaje bíblico para tu situación</p>
+                        <p class="english">Receive a Bible verse for your situation</p>
                     </div>
                     <div class="feature-card">
                         <h4>3️⃣ Reflexiona y confía</h4>
                         <p>Toma un momento con Dios</p>
+                        <p class="english">Reflect and trust - Take a moment with God</p>
                     </div>
                 </div>
             </section>
 
             <section class="section">
-                <h2>PARA DÍAS DIFÍCILES Y DÍAS BUENOS TAMBIÉN</h2>
-
-                <div class="moments-list">
-                    <ul>
-                        <li>Cuando la ansiedad aprieta</li>
-                        <li>Cuando el miedo intenta paralizar</li>
-                        <li>Cuando el corazón necesita consuelo</li>
-                        <li>Cuando la gratitud desborda</li>
-                        <li>Cuando se necesita fortaleza</li>
-                        <li>Cuando la fe necesita renovarse</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="section">
-                <h2>QUÉ HAY DENTRO</h2>
+                <h2>QUÉ HAY DENTRO<br><span style="font-size: 0.8em; font-style: italic; color: #764ba2;">WHAT IS INSIDE</span></h2>
 
                 <div class="highlight-box">
                     <ul style="list-style: none; padding-left: 0;">
-                        <li style="padding: 10px 0; font-size: 1.1em;">📖 Versículos bíblicos organizados por emociones</li>
-                        <li style="padding: 10px 0; font-size: 1.1em;">⭐ Guarda favoritos para volver a las promesas clave</li>
-                        <li style="padding: 10px 0; font-size: 1.1em;">🕊️ Un momento tranquilo para reflexionar</li>
-                        <li style="padding: 10px 0; font-size: 1.1em;">🇪🇸 Todo el contenido completamente en español</li>
-                        <li style="padding: 10px 0; font-size: 1.1em;">📤 Versículos listos para compartir con otros</li>
+                        <li style="padding: 10px 0; font-size: 1.05em;">
+                            📖 <span class="spanish">Versículos bíblicos organizados por emociones</span><br>
+                            <span style="margin-left: 25px;" class="english">Bible verses organized by emotions</span>
+                        </li>
+                        <li style="padding: 10px 0; font-size: 1.05em;">
+                            ⭐ <span class="spanish">Guarda favoritos para volver a las promesas clave</span><br>
+                            <span style="margin-left: 25px;" class="english">Save favorites to return to key promises</span>
+                        </li>
+                        <li style="padding: 10px 0; font-size: 1.05em;">
+                            🕊️ <span class="spanish">Un momento tranquilo para reflexionar</span><br>
+                            <span style="margin-left: 25px;" class="english">A calm moment to reflect</span>
+                        </li>
+                        <li style="padding: 10px 0; font-size: 1.05em;">
+                            🌎 <span class="spanish">Todo el contenido en español e inglés</span><br>
+                            <span style="margin-left: 25px;" class="english">All content in Spanish and English</span>
+                        </li>
+                        <li style="padding: 10px 0; font-size: 1.05em;">
+                            📤 <span class="spanish">Versículos listos para compartir con otros</span><br>
+                            <span style="margin-left: 25px;" class="english">Verses ready to share with others</span>
+                        </li>
                     </ul>
                 </div>
             </section>
 
             <section class="section">
-                <h2>RECUERDA LO MÁS IMPORTANTE</h2>
+                <h2>RECUERDA LO MÁS IMPORTANTE<br><span style="font-size: 0.8em; font-style: italic; color: #764ba2;">REMEMBER WHAT MATTERS MOST</span></h2>
 
                 <div class="highlight-box" style="text-align: center;">
-                    <p style="font-size: 1.3em; font-weight: bold; color: #667eea;">Dios está presente.</p>
-                    <p style="font-size: 1.3em; font-weight: bold; color: #764ba2;">Dios habla a través de Su Palabra.</p>
-                    <p style="font-size: 1.3em; font-weight: bold; color: #667eea;">Su Palabra puede traer calma incluso en medio de la tormenta.</p>
+                    <p style="font-size: 1.2em; font-weight: bold; color: #667eea;">Dios está presente / God is present</p>
+                    <p style="font-size: 1.2em; font-weight: bold; color: #764ba2;">Dios habla a través de Su Palabra / God speaks through His Word</p>
+                    <p style="font-size: 1.2em; font-weight: bold; color: #667eea;">Su Palabra puede traer calma incluso en medio de la tormenta<br><span style="font-size: 0.9em; font-style: italic;">His Word can bring calm even in the midst of the storm</span></p>
                 </div>
             </section>
 
             <section class="section">
-                <h2>BENEFICIOS ESPIRITUALES</h2>
+                <h2>BENEFICIOS ESPIRITUALES<br><span style="font-size: 0.8em; font-style: italic; color: #764ba2;">SPIRITUAL BENEFITS</span></h2>
 
                 <div class="benefits-grid">
                     <div class="benefit-item">
-                        <strong>Nutre la fe</strong>
+                        <strong class="spanish">Nutre la fe</strong><br>
+                        <span class="english">Nourishes faith</span>
                     </div>
                     <div class="benefit-item">
-                        <strong>Reaviva la esperanza</strong>
+                        <strong class="spanish">Reaviva la esperanza</strong><br>
+                        <span class="english">Revives hope</span>
                     </div>
                     <div class="benefit-item">
-                        <strong>Fortalece el alma</strong>
+                        <strong class="spanish">Fortalece el alma</strong><br>
+                        <span class="english">Strengthens the soul</span>
                     </div>
                     <div class="benefit-item">
-                        <strong>Guía tu mente hacia lo verdadero y eterno</strong>
+                        <strong class="spanish">Guía tu mente hacia lo verdadero y eterno</strong><br>
+                        <span class="english">Guides your mind toward what is true and eternal</span>
                     </div>
                 </div>
             </section>
 
             <section class="section" style="text-align: center;">
                 <div class="highlight-box">
-                    <p style="font-size: 1.4em; font-weight: bold; color: #667eea; margin-bottom: 20px;">
+                    <p style="font-size: 1.3em; font-weight: bold; color: #667eea; margin-bottom: 15px;">
                         Pocket Promises es un puente entre tu momento presente y el mensaje que Dios tiene preparado para ti.
+                    </p>
+                    <p style="font-size: 1.2em; font-weight: bold; color: #764ba2; font-style: italic;">
+                        Pocket Promises is a bridge between your present moment and the message God has prepared for you.
                     </p>
                 </div>
             </section>
 
             <section class="section">
-                <h2>LEGAL Y POLÍTICAS</h2>
+                <h2>LEGAL Y POLÍTICAS / LEGAL AND POLICIES</h2>
 
                 <div style="background: #f8f9fa; padding: 30px; border-radius: 15px;">
-                    <h3>Términos de Uso (EULA)</h3>
-                    <p>Esta aplicación se rige por el Acuerdo de Licencia de Usuario Final estándar de Apple:</p>
+                    <h3>Términos de Uso / Terms of Use (EULA)</h3>
+                    <p class="spanish">Esta aplicación se rige por el Acuerdo de Licencia de Usuario Final estándar de Apple:</p>
+                    <p class="english">This app is governed by Apple's standard End User License Agreement:</p>
                     <p><a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" style="color: #667eea; word-break: break-all;">https://www.apple.com/legal/internet-services/itunes/dev/stdeula/</a></p>
 
-                    <h3 style="margin-top: 30px;">Política de Privacidad</h3>
-                    <p>Se pueden recopilar datos mínimos de uso para mejorar la experiencia del usuario. No se vende ni comparte información personal o sensible con terceros. Más detalles están disponibles en la Política de Privacidad de la aplicación.</p>
+                    <h3 style="margin-top: 30px;">Política de Privacidad / Privacy Policy</h3>
+                    <p class="spanish">Se pueden recopilar datos mínimos de uso para mejorar la experiencia del usuario. No se vende ni comparte información personal o sensible con terceros.</p>
+                    <p class="english">Minimal usage data may be collected to improve user experience. No personal or sensitive information is sold or shared with third parties.</p>
                 </div>
             </section>
 
             <div style="text-align: center; margin: 50px 0;">
-                <p style="font-size: 1.3em; color: #667eea; font-weight: bold;">
+                <p style="font-size: 1.3em; color: #667eea; font-weight: bold; margin-bottom: 10px;">
                     Descarga Pocket Promises hoy y encuentra la palabra que tu corazón necesita.
+                </p>
+                <p style="font-size: 1.2em; color: #764ba2; font-weight: bold; font-style: italic;">
+                    Download Pocket Promises today and find the word your heart needs.
                 </p>
             </div>
         </div>
 
         <footer>
-            <p>&copy; 2024 Pocket Promises. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Pocket Promises / Notas de Bendición. Todos los derechos reservados / All rights reserved.</p>
             <p>
-                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Términos de Uso</a> |
-                <a href="#privacy">Política de Privacidad</a>
+                <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Términos de Uso / Terms of Use</a> |
+                <a href="#privacy">Política de Privacidad / Privacy Policy</a>
             </p>
         </footer>
     </div>
